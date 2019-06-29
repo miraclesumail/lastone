@@ -1,0 +1,89 @@
+.withdrawal {
+    padding: 0.36rem 0.28rem;
+    .box_main_bank {
+        margin-top: 0.4rem;
+        background-image: linear-gradient(to right, #292929, #1c1d1c);
+        .bank_info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.3rem;
+            > div {
+                height: 1.5rem;
+                display: flex;
+                align-items: center;
+            }
+
+            >p {
+                text-align: right;
+                padding-right: 0.3rem;
+                margin-right: 0.3rem;
+                background: url('../images/icon_jiantou.png') no-repeat right center/auto 50%;
+            }
+
+            .icon_bank {
+                width: 1.2rem;
+                height: 100%;
+                background: url('../images/bank/bank_4.png') no-repeat center center/50%;
+            }
+            .bank_card{
+                text-align: left;
+                p{
+                    margin: 0.1rem auto;
+                }
+            }
+        }
+        .box_input_amount {
+            padding: 0.34rem;
+            border-top: 0.15rem solid rgba(255, 255, 255, 0.1);
+            .box_input {
+                height: 1.08rem;
+                margin-top: 0.2rem;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                label {
+                    font-size: 0.5rem;
+                    margin-top: 0.1rem;
+                    margin-right: 0.1rem;
+                }
+                input {
+                    height: 0.64rem;
+                    width: 5.7rem;
+                    background-color: transparent;
+                    font-size: 0.8rem;
+                    color: #fff;
+                }
+                input::-webkit-input-placeholder { /* WebKit browsers */
+                    //color:#ccc;
+                    font-size: 0.36rem;
+                    position: relative;
+                    top:-0.06rem;
+                }
+                input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    //color:#ccc;
+                    font-size: 0.36rem;
+                    position: relative;
+                    top:-0.06rem;
+                }
+                input::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    //color:#ccc;
+                    font-size: 0.36rem;
+                    position: relative;
+                    top:-0.06rem;
+                }
+                input:-ms-input-placeholder { /* Internet Explorer 10+ */
+                    //color:#ccc;
+                    font-size: 0.36rem;
+                    position: relative;
+                    top:-0.06rem;
+                }
+            }
+        }
+        .btn_sumbit {
+            width: 4.12rem;
+            height: 0.98rem;
+            background-image: url('../images/btn/btn_queding.png');
+        }
+    }
+}

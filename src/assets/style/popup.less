@@ -1,0 +1,181 @@
+.r_popup_confirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    z-index: 1000;
+    
+    .popup_main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        width: 6rem;
+        min-height: 4.84rem;
+        background-color: @popup_confirm_bg;
+        border: @popup_confirm_border;
+        border-radius: 0.15rem;
+        border-bottom: none;
+        &.hasBorderBottom{
+            border-bottom: @popup_confirm_border;
+        }
+    }
+
+    .popup_title {
+        overflow: hidden;
+        width: 100%;
+        height: 1.03rem;
+        text-align: center;
+        // color: #f2e699;
+        font-size: 0.3rem;
+        font-weight: 700;
+        line-height: 0.94rem;
+        position: relative;
+        background: url('../images/popup_title_bg.png') no-repeat center center/100% auto;
+    }
+
+    .popup_close_btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0.94rem;
+        height: 0.94rem;
+    }
+
+    .popup_content {
+        table-layout: fixed;
+        width: 100%;
+        min-height: 2.98rem;
+        overflow: hidden;
+        padding: 0.15rem;
+        display: table;
+        font-size: 0.35rem;
+        .popuo_content_msg {
+            // color: #fff;
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+    }
+
+    .box_popup_btn {
+        width: 100%;
+        height: 0.83rem;
+        line-height: 0.83rem;
+        display: flex;
+        font-size: 0.3rem;
+        .popupConfirmBtnBg();
+        .popup_btn {
+            flex: 1;
+            height: 100%;
+            font-weight: 700;
+            // color: #2c2c2c;
+        }
+    }
+}
+
+.r_popup_commission {
+    .popup_title {
+        height: 0.66rem;
+        line-height: 0.66rem;
+        font-size: 0.32rem;
+        color: #755a00;
+        font-weight: 400;
+        background-image: linear-gradient(to right, #eacd72, #f3e89b);
+    }
+    .popup_close_btn {
+        width: 0.66rem;
+        height: 0.66rem;
+        background: url('../images/icon_quxiao.png') no-repeat center center/50%;
+    }
+    .popup_content {
+        padding: 0;
+    }
+    .popup_main {
+        border: none;
+        background-color: #363636;
+        border-radius: 0;
+    }
+    .popuo_content_msg {
+        font-size: 0.26rem;
+        padding: 0.49rem 0.2rem;
+        >p {
+            line-height: 0.6rem;
+            span {
+                text-align: left;
+                display: inline-block;
+            }
+            span:nth-child(1) {
+                text-align: left;
+                width: 3.2rem;
+                padding-left: 1rem;
+            }
+            span:nth-child(2) {
+                text-align: left;
+                width: 1.9rem;
+            }
+        }
+        .bottom_line {
+            margin-top: 0.52rem;
+            height: 1px;
+            background-color: rgba(255, 255, 255, .3);
+        }
+        .c_box_bottom {
+            padding-top: 0.3rem;
+            line-height: 0.48rem;
+        }
+    }
+
+    .font_color1 {
+        font-weight: bold;
+    }
+
+    .to_search {
+        font-weight: 400;
+        background-image: url('../images/icon_jiantou.png');
+        background-position: 0.6rem center;
+        background-repeat: no-repeat;
+        background-size: 10%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    /* 横屏 css */
+    .r_popup_confirm {
+        .popup_main {
+            width: 400px;
+            min-height: 300px;
+            transform: translate(-50%, -50%);
+        }
+
+        .popup_title {
+            height: 68px;
+            line-height: 68px;
+        }
+
+        .popup_close_btn {
+            width: 68px;
+            height: 62px;
+        }
+
+        .popup_content {
+            font-size: 16px !important;
+            min-height: 176px;
+            max-height: 176px;
+            overflow-y: auto; 
+        }
+
+        .box_popup_btn {
+            height: 55px;
+            line-height: 55px;
+            font-size: 18px;
+        }
+    }
+}
+
+

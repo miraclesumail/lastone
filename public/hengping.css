@@ -1,0 +1,89 @@
+#app {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.form_item {
+  height: 83px;
+}
+.form_item .form_item_in {
+  height: 60px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.form_item .form_item_in input,
+.form_item .form_item_in select {
+  height: 40px;
+  font-size: 20px;
+}
+.show_item .show_item_in {
+  height: 60px;
+  line-height: 60px;
+}
+.captcha {
+  height: 60px;
+}
+.button_index .btn_size_xsmall {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+}
+.button_index .btn_size_small {
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+}
+.button_index .btn_size_middle {
+  width: 200px;
+  height: 60px;
+  font-size: 22px;
+}
+.button_index .btn_size_big {
+  width: 240px;
+  height: 60px;
+  font-size: 26px;
+}
+.button_index .btn_shape_xsmall_round {
+  border-radius: 50px;
+}
+.button_index .btn_shape_small_round {
+  border-radius: 50px;
+}
+.button_index .btn_shape_middle_round {
+  border-radius: 30px;
+}
+.button_index .btn_shape_big_round {
+  border-radius: 175px;
+}
+.sign_in {
+  background-image: none;
+  padding-top: 10px;
+}
+.sign_in .btn_wrap {
+  padding-top: 20px;
+}
+.sign_up {
+  background-image: none;
+  padding-top: 10px;
+}
+.sign_up .btn_wrap {
+  padding-top: 20px;
+}
+.money_index .switch span {
+  font-size: 16px;
+}
+.money_index .transfer,
+.money_index .recharge {
+  padding-top: 40px;
+}
+.money_index .transfer {
+  padding-top: 40px;
+}
+.money_index .ac_amount {
+  padding: 10px 20px;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.money_index .wrap {
+  padding: 30px 27px;
+}

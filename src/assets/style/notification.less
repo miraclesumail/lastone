@@ -1,0 +1,139 @@
+.notification {
+    .header {
+        .header_center {
+            width: 3rem;
+            .header_title {
+                margin-left: 0.4rem;
+                line-height: 0.6rem;
+                display: inline-block;
+                letter-spacing: 1px;
+            }
+            .header_title_active {
+                font-weight: bold;
+                margin-right: 0.4rem;
+                line-height: 0.6rem;
+                display: inline-block;
+                position: relative;
+                letter-spacing: 1px;
+                &:after {
+                    position: absolute;
+                    content: " ";
+                    height: 2px;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    background-color: @notification_header_active_bg_color;
+                }
+            }
+        }
+    }
+    .notification_item {
+        border-bottom: 1px solid;
+        border-color: @notification_item_border_bottom_color;
+        background-color: @notification_item_bg_color;
+        .notification_info {
+            display: flex;
+            flex-direction: column;
+            .notification_sign {
+                margin: 0.2rem 0.2rem 0.1rem 0.28rem;
+                display: flex;
+                .notification_laba{
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url("../images/notification_laba.png");
+                }
+                .notification_title{
+                    text-align: left;
+                    margin-top: 0.14rem;
+                    font-size: 0.3rem;
+                    font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    letter-spacing: 1px;
+                    margin-left: 0.2rem;
+                    flex: 1;
+                }
+            }
+            .notification_content {
+                text-align: left;
+                margin-top: 0.02rem;
+                font-size: 0.28rem;
+                margin-right: 0.2rem;
+                margin-left: 0.34rem;
+                flex: 1;
+            }
+        }
+        .notification_date {
+            text-align: right;
+            line-height: 0.7rem;
+            margin-right: 0.24rem;
+            font-size: 0.28rem;
+        }
+    }
+}
+@media screen and (orientation: landscape) {
+    /* 横屏 css */
+    .notification {
+        .header {
+            .header_center {
+                width: 3rem;
+                .header_title {
+                    margin-left: 0.4rem;
+                    line-height: 40px;
+                    display: inline-block;
+                    letter-spacing: 1px;
+                }
+                .header_title_active {
+                    font-weight: bold;
+                    margin-right: 0.4rem;
+                    line-height: 40px;
+                    display: inline-block;
+                    position: relative;
+                    letter-spacing: 1px;
+                    &:after {
+                        position: absolute;
+                        content: " ";
+                        height: 2px;
+                        width: 100%;
+                        bottom: 5px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .notification_item {
+            .notification_info {
+                .notification_sign {
+                    margin: 0.1rem 0.1rem 0.05rem 0.2rem;
+                    img {
+                        height: 0.42rem;
+                    }
+                    .notification_laba{
+                        width: 0.42rem;
+                        height: 0.42rem;
+                    }
+                    .notification_title{
+                        margin-top: 0.08rem;
+                        font-size: 0.17rem;
+                        letter-spacing: 1px;
+                        margin-left: 0.15rem;
+                    }
+                }
+                .notification_content {
+                    margin-top: 0rem;
+                    font-size: 0.16rem;
+                    margin-right: 0.2rem;
+                    margin-left: 0.28rem;
+                }
+            }
+            .notification_date {
+                line-height: 0.32rem;
+                margin-right: 0.2rem;
+                font-size: 0.17rem;
+            }
+        }
+    }
+}

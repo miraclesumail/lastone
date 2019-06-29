@@ -1,0 +1,64 @@
+.download{
+    .content{
+        .title{
+            font-size: 0.3rem;
+            text-align: left;
+            padding: 0.35rem 0 0.2rem 0.3rem;
+            border-bottom: 1px solid @other_b_color;
+            &.title_1{
+                padding-top: 0.2rem;
+            }
+        }
+        .title_content{
+            font-size: 0.28rem;
+            padding: 0.25rem;
+            border-bottom: 1px solid @other_b_color;
+            text-align: left;
+        }
+        .list{
+            .item{
+                display: flex;
+                padding: 0.25rem 0;
+                border-bottom:1px solid @other_b_color;
+                .item_left{
+                    font-size: 0.27rem;
+                    padding-left: 0.3rem;
+                    padding-right: 0.3rem;
+                    img{
+                        width: 1.15rem;
+                    }
+                    .item_img{
+                        width: 1.15rem;
+                        height: 1.15rem;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .item_center{
+                    text-align: left;
+                    flex: 1;
+                    .item_name{
+                        font-size: 0.3rem;
+                    }
+                    .item_version{
+                        font-size: 0.26rem;
+                    }
+                    .item_device{
+                        font-size: 0.26rem;
+                    }
+                }
+                .item_right{
+                    display: flex;
+                    padding-right: 0.3rem;
+                    .download_btn{
+                        margin: auto;
+                        width: 1.8rem;
+                        height: 1rem;
+                        background:url("../images/download_xiazai.png") no-repeat center center;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}

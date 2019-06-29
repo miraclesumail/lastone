@@ -1,0 +1,50 @@
+.d_member_fee {
+  width: 7.16rem;
+  height: 2.9rem;
+  background: url(@memberFee_bg) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.44rem auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  > li {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+    > span {
+      font-size: 0.25rem;
+      color: #815200;
+    }
+
+    > em {
+      font-size: 0.19rem;
+      color: #000;
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 0.18rem;
+    }
+  }
+  &.oneh{
+    height: 1.45rem;
+    >li{
+      flex: 1;
+    }
+  }
+  &.line:after {
+    display: block;
+    content: '';
+    width: 6.52rem;
+    height: 0.01rem;
+    background: @memberFee_line_bg;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

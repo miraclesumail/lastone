@@ -1,0 +1,63 @@
+.sign_in_up {
+  height: 100%;
+  background: url('../images/login_bg.jpg') no-repeat center / 100% 100%;
+}
+.sign_in_up .main_sign_in_up {
+  padding-top: 1.06rem;
+  height: 100%;
+  display: inline-block;
+}
+.sign_in_up .sign_logo {
+  height: 1.52rem;
+  margin-bottom: 0.8rem;
+  background: url('../images/logo.png') no-repeat center center / auto 100%;
+}
+.sign_in_up .login_btn,
+.sign_in_up .reg_btn {
+  width: 5rem;
+  height: 0.72rem;
+  margin-bottom: 0.35rem;
+}
+.sign_in_up .login_btn {
+  background-image: url('../images/btn/btn_denglu.png');
+}
+.sign_in_up .reg_btn {
+  margin-top: 0.6rem;
+  background-image: url('../images/btn/btn_zhuce.png');
+}
+.sign_in_up .r_box_form {
+  display: inline-block;
+  width: 5rem;
+}
+.sign_in_up .username {
+  left: 18% !important;
+}
+.sign_in_up .operate {
+  width: 5rem;
+  font-size: 0.24rem;
+  color: #e9cc70;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.sign_in_up .rmb_username::after {
+  margin-left: 0.16rem;
+  content: '';
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border: 2px solid #e9cc70;
+  vertical-align: middle;
+}
+.sign_in_up .rmb_username_active::after {
+  background: url('../images/icon_gou.png') no-repeat center center / 80% auto;
+}
+.sign_in_up .small_text {
+  color: #999999;
+  font-size: 0.24rem;
+  line-height: 0.3rem;
+}
+.sign_in_up .sign_up_text {
+  margin-top: -0.2rem;
+  text-align: right;
+}

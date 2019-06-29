@@ -1,0 +1,228 @@
+.mail {
+    .header {
+        .header_center {
+            width: 3rem;
+            .header_title {
+                margin-right: 0.4rem;
+                line-height: 40px;
+                display: inline-block;
+                letter-spacing: 1px;
+            }
+            .header_title_active {
+                margin-left: 0.4rem;
+                font-weight: bold;
+                line-height: 40px;
+                display: inline-block;
+                position: relative;
+                letter-spacing: 1px;
+                &:after {
+                    position: absolute;
+                    content: " ";
+                    height: 2px;
+                    width: 100%;
+                    bottom: 5px;
+                    left: 0;
+                    background-color: @mail_header_active_bg_color;
+                }
+            }
+        }
+    }
+    .mail_item {
+        border-bottom: 1px solid;
+        border-color: @mail_item_border_bottom_color;
+        background-color: @mail_item_bg_color;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &.show_del{
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .mail_body {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .mail_content {
+                height: 1.2rem;
+                &.mail_open{
+                    height: auto;
+                }
+            }
+            .mail_info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 1.2rem;
+                .mail_sign {
+                    margin-right: 0.2rem;
+                    margin-left: 0.28rem;
+                    .mail_open{
+                        width: 0.7rem;
+                        height: 0.7rem;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url("../images/mail_open.png");
+                    }
+                    .mail_noopen{
+                        width: 0.7rem;
+                        height: 0.7rem;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url("../images/mail_noopen.png");
+                    }
+                }
+                .mail_title {
+                    text-align: left;
+                    font-size: 0.3rem;
+                    margin-right: 0.2rem;
+                    font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    letter-spacing: 1px;
+                    flex: 1;
+                }
+                .mail_date {
+                    text-align: right;
+                    line-height: 0.6rem;
+                    margin-right: 0.2rem;
+                    font-size: 0.27rem;
+                    color:#777777;
+                }
+                .mail_arrow{
+                    background: url("../images/mail_arrow_top.png") no-repeat center center;
+                    background-size: contain;
+                    width: 0.3rem;
+                    height: 0.18rem;
+                    margin-right: 0.2rem;
+                    &.open{
+                        background: url("../images/mail_arrow_bottom.png") no-repeat center center;
+                        background-size: contain;
+                    }
+                }
+            }
+            .mail_text {
+                font-size: 0.28rem;
+                text-align: left;
+                margin-left: 0.34rem;
+                margin-right: 0.3rem;
+                margin-bottom: 0.1rem;
+            }
+        }
+        .mail_del {
+            .mail_del_img{
+                width: 1.5rem;
+                height: 0.7rem;
+                margin-bottom: 0.2rem;
+                background: url("../images/btn/btn_shanchu.png") no-repeat center center;
+                background-size: contain;
+                float: right;
+                margin-right: 0.2rem;
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media screen and (orientation: landscape) {
+    /* 横屏 css */
+    .mail {
+        .header {
+            .header_center {
+                width: 3rem;
+                .header_title {
+                    margin-right: 0.4rem;
+                    line-height: 40px;
+                    letter-spacing: 1px;
+                }
+                .header_title_active {
+                    margin-left: 0.4rem;
+                    line-height: 40px;
+                    letter-spacing: 1px;
+                    &:after {
+                        height: 2px;
+                        width: 100%;
+                        bottom: 5px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .mail_item {
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &.show_del{
+            }
+            .mail_body {
+                width: 100%;
+                .mail_content {
+                    height: 0.65rem;
+                    &.mail_open{
+                        height: auto;
+                    }
+                }
+                .mail_info {
+                    min-height: 0.65rem;
+                    .mail_sign {
+                        margin-right: 0.2rem;
+                        margin-left: 0.28rem;
+                        img {
+                            width: 0.4rem;
+                        }
+                        .mail_open{
+                            width: 0.4rem;
+                            height: 0.4rem;
+                        }
+                        .mail_noopen{
+                            width: 0.4rem;
+                            height: 0.4rem;
+                        }
+                    }
+                    .mail_title {
+                        font-size: 0.18rem;
+                        margin-right: 0.2rem;
+                        letter-spacing: 1px;
+                        flex: 1;
+                    }
+                    .mail_date {
+                        line-height: 0.6rem;
+                        margin-right: 0.2rem;
+                        font-size: 0.2rem;
+                    }
+                }
+                .mail_text {
+                    font-size: 0.16rem;
+                    margin-left: 0.34rem;
+                    margin-right: 0.2rem;
+                    margin-bottom: 0.2rem;
+                }
+            }
+            .mail_del {
+                font-size: 0.1rem;
+                width: 1.4rem;
+                right: -1.4rem;
+                bottom: 0;
+                top: 0;
+                //img {
+                //    width: 0.26rem;
+                //    margin-bottom: 0.03rem;
+                //}
+                .mail_del_img{
+                    width: 0.26rem;
+                    height: 0.27rem;
+                    margin-bottom: 0.03rem;
+                }
+                span{
+                }
+            }
+        }
+    }
+}

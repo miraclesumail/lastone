@@ -1,0 +1,679 @@
+/* 字体颜色 深 */
+.s_font {
+    background-image: linear-gradient(to top, #dbaa40, #efd961);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 字体颜色 浅*/
+.s_font2 {
+    background-image: linear-gradient(to top, #ecd47d, #fafcc3);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 字体颜色 */
+.font_color1 {
+    color: #e9cc70;
+}
+
+/* 灰色字体 */
+.text {
+    color: #999999;
+    font-size: 0.3rem;
+    text-align: left;
+}
+
+/* 公用表格样式01 */
+.table {
+    width: 100%;
+    margin: 0 auto;
+    font-size: .28rem;
+    background-color: @common_table_bg_color;
+    &.infotable{
+        border: 1px solid @common_table_infotable_border_color;
+        overflow: hidden;
+        border-radius: 0.18rem;
+        th{
+           .commonThColor_infotable();
+        }
+    }
+    th {
+        .commonThColor();
+        height: 0.6rem;
+        line-height: 0.6rem;
+    }
+    td {
+        border: 1px solid @common_table_border_color;
+        line-height: .56rem;
+        padding: 0.1rem 0;
+        line-height: 0.3rem;
+        &:first-child {
+            border-left: none;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+/* 公用表格样式02 */
+.table_b {
+    width: 100%;
+    margin: 0.5rem auto;
+    border-spacing: 1PX;
+    background-color: @common_table_border_color02;
+    font-size: .28rem;
+    &.nomargin{
+        margin: 0 auto;
+    }
+    th {
+        .tableThBgColor02();
+        line-height: .6rem;
+        &.sort_title {
+            position: relative;
+            &.down:after{
+                display: block;
+                content: '';
+                width: 0.2rem;
+                height: 0.12rem;
+                position: absolute;
+                right: 0.35rem;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url(@search_top) no-repeat;
+                background-size: 100% 100%;
+              
+            }
+      
+            &.up:after{
+              display: block;
+              content: '';
+              width: 0.2rem;
+              height: 0.12rem;
+              position: absolute;
+              right: 0.35rem;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              background: url(@search_top) no-repeat;
+              transform: rotate(180deg);
+              background-size: 100% 100%;   
+            }
+        }
+    }
+    td {
+        background-color: @table_bg_color02;
+        line-height: .56rem;
+        padding: 0.1rem 0;
+        line-height: 0.3rem;
+
+        &.searchLogo{
+                background: url(@info_search_logo) no-repeat center center;
+                background-size: 0.3rem 0.4rem;
+                background-color: black;
+        }
+        >input{
+            width: 1rem;
+            height: 0.4rem;
+            border: 0.01rem solid @table_b_input_border;
+            background: @table_b_input_bg;
+            font-size:0.2rem;
+            color:@table_b_input_color;
+            text-align: center;
+            &::-webkit-input-placeholder{
+                color: @table_b_input_color;
+            }
+            &.edit{
+                color: @table_b_input_edit_color;
+                &::-webkit-input-placeholder{
+                    color: @table_b_input_edit_color;
+                }
+            }
+        }
+        >.search{
+            display: inline-block;
+            width: 0.36rem;
+            height: 0.48rem;
+            background: url(@info_search_logo) no-repeat;
+            background-size:100% 100%;
+            margin:  0 0.25rem;
+        }
+        >.yj_white{
+            display: inline-block;
+            width: 0.48rem;
+            height: 0.48rem;
+            background: url(@icon_yj_whtie) no-repeat;
+            background-size:100% 100%;
+            margin-left: 0.1rem;
+        }
+        >.see_dl{
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.44rem;
+            background: url(@icon_see_dl) no-repeat;
+            background-size:100% 100%;
+            margin-right: 0.1rem;
+        }
+        &.seex{
+            position: relative;
+            &:after{
+                position: absolute;
+                right: 0.1rem;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: block;
+                content: '';
+                width: 0.28rem;
+                height: 0.32rem;
+                background: url(@icon_see_mx) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+/* 表单盒子 */
+.r_box_form {
+    font-size: 0;
+}
+
+/* 输入框 选择框样式 */
+.form_item {
+    width: 100%;
+    padding: 0 0.27rem;
+    text-align: center;
+    display: inline-block;
+    height: 1.34rem;
+    .form_item_in {
+        display: inline-block;
+        width: 100%;
+        height: 0.9rem;
+        background-color: #000;
+        color: #fff;
+        font-size: 0.24rem;
+        line-height: 0.9rem;
+        text-align: left;
+        padding-left: 0.3rem;
+        border: 1px solid #fafbbc;
+        border-radius: 0.45rem;
+        position: relative;
+        vertical-align: top;
+        overflow: hidden;
+        label {
+            display: inline-block;
+            height: 100%;
+            width: 25%;
+        }
+        input,select {
+            width: 80%;
+            color: #f8f5b3;
+            background-color: #000;
+            height: 0.7rem;
+            font-size: 0.24rem;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translateY(-50%);
+            margin-top: 0.02rem;
+        }
+        input.full{
+            left: 0;
+            width: 100%;
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+        }
+    }
+    .select:after {
+        position: absolute;
+        display: inline-block;
+        pointer-events: none;
+        content: " ";
+        height: 0.2rem;
+        width: 0.2rem;
+        border-width: 0.02rem 0.02rem 0 0;
+        border-color: #fff;
+        border-style: solid;
+        top: 50%;
+        right: 0.3rem;
+        transform: rotate(134deg) translateY(100%);
+    }
+
+    .meg_error {
+        color: red;
+        text-align: left;
+        padding-left: 0.27rem;
+        font-size: 0.24rem;
+        margin-top: 0.03rem;
+    }
+}
+
+/* 登录注册输入框样式 */
+.form_item_b {
+    padding: 0;
+    height: 1.2rem;
+    .form_item_in {
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 0.72rem;
+        padding: 0;
+        label {
+            width: 19.4%;
+            position: relative;
+        }
+        input,select {
+            height: 99%;
+            background-color: transparent;
+            left: 20%;
+        }
+    }
+}
+
+/* 一行两个输入框 */
+.box_form_item {
+    position: relative;
+    text-align: left;
+    padding: 0 0.27rem;
+    min-height: 1.34rem;
+    .form_item {
+        height: 0.8rem;
+    }
+    .item_left,.item_right {
+        display: inline-block;
+    }
+    .item_left {
+        width: 61%;
+        margin-right: 0.14rem;
+        .form_item {
+            padding: 0;
+            label {
+                width: 32%;
+            }
+
+            input,select {
+                padding-left: 0.3rem;
+                width: 63%;
+            }
+            input,select {
+                left: 42%;
+            }
+        }
+    }
+    .item_right {
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        >.get_code_btn{
+            .get_code_btn()
+        }
+        .form_item {
+            padding: 0;
+            input,select {
+                width: 90%;
+                left: 15%;
+            }
+        }
+    }
+
+    .meg_error {
+        color: red;
+        text-align: left;
+        padding-left: 0.35rem;
+        font-size: 0.24rem;
+        // margin-top: 0.1rem;
+        // margin-top: 0;
+    }
+
+}
+
+// 基础按钮类
+.main_btn {
+    display: inline-block;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:active {
+        filter: brightness(110%);
+    }
+}
+
+/* 验证码 */
+.captcha {
+    width: 2.4rem;
+    height: 0.9rem;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%) brightness(1);
+    }
+}
+
+/* 获取验证码按钮 */
+.getSmsCodeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #7a6215;
+    width: 1.62rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    text-align: center;
+    background-image: url('../images/btn/btn_smsCode.png');
+}
+
+/* 表单中的icon */
+.form_item_icon {
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 分割线 */
+.box_line {
+    border: 1px solid #ebd27a;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translate(-50%, 50%);
+        display: inline-block;
+        height: 0.35rem;
+        width: 2.5rem;
+        background: url('../images/border_light.png') no-repeat center center/100% auto;
+    }
+}
+
+/* 余额组件 */
+.box_localBalance {
+    height: 2.36rem;
+    background: url('../images/bg_yue.png') no-repeat center/100%;
+    padding: 0.56rem 0.28rem 0;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    .box_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .localBalance {
+        margin-left: -0.1rem;
+        background-image: linear-gradient(to top, #eace72, #fafbbb);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .insignia {
+        font-size: 0.5rem;
+    }
+    .btn_withdrawal {
+        width: 1.52rem;
+        height: 0.62rem;
+        background-image: url('../images/btn/btn_withdrawal.png');
+        background-size: 100%;
+    }
+}
+
+/* 面板阴影 */
+.box_shadow {
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+/* 账户中心展示栏 */
+.title_item {
+    height: 0.86rem;
+    line-height: 0.86rem;
+    font-size: 0.3rem;
+    text-align: left;
+    padding: 0 0.28rem;
+    border-bottom: 1px solid #ecd27a;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    .title_item_cont_1 {
+        color: #868686;
+    }
+    .title_item_cont_2 {
+        color: #f8f5b3;
+    }
+    .have_right_arr {
+        padding-right: 0.3rem;
+        background-color: red;
+        background: url('../images/icon_jiantoutt.png') no-repeat right center/auto 30%;
+    }
+}
+
+/* 各种icon */
+.icon_p {
+    background-image: url('../images/icon_p.png');
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 0.35rem;
+        background-color: rgba(88, 88, 88, 0.6);
+        position: absolute;
+        right: 0.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.icon_mima {
+    background-image: url('../images/icon_mima.png');
+}
+
+.icon_sms {
+    background-image: url('../images/icon_sms.png');
+}
+
+.icon_phone {
+    background-image: url('../images/icon_phone.png');
+}
+
+.icon_smscode {
+    background-image: url('../images/icon_smscode.png');
+}
+
+.s_border_b{
+    position: relative;
+    &:after{
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-image: url(../images/border_light.png);
+        background-position: center center;
+        background-size: contain;
+        content: "";
+        position: absolute;
+        bottom: -0.2rem;
+        left: -0.3rem;
+        right: 0;
+        height: 0.43rem;
+        width: 2.5rem;
+        margin: 0;
+    }
+}
+//table 3 类型
+.table_box{
+    >.title_top{
+        width: 100%;
+        height: 0.62rem;
+        display: flex;
+        flex-direction: row;
+        .table_box_top_bg();
+        >span{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.24rem;
+            color: @table_box_top_color;
+        }
+    }
+    >.user_info{
+        >li{
+            height: 0.66rem;
+            border-bottom: 0.01rem solid @table_box_content_border;
+            display: flex;
+            background: @table_box_content_bg;
+            flex-direction: row;
+            >span{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.26rem;
+                color: @table_box_content_color1;
+                &.gobtn{
+                    color: @table_box_content_color2;
+                    position: relative;
+                    &:after{
+                        position: absolute;
+                        right: 1.1rem;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        display: block;
+                        content: '';
+                        width: 0.2rem;
+                        height: 0.36rem;
+                        background: url(@table_box_jt_logo) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+//单线  input 样式
+.single_input_box{
+    > div {
+        width: 100%;
+        height: 0.88rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.3rem;
+        border-bottom: 0.01rem solid @single_input_box_border;
+        background: @single_input_box_bg;
+
+        > span {
+            font-size: 0.29rem;
+            color: @single_input_box_span_color;
+
+            &:last-child {
+                color: @single_input_box_span_color;
+            }
+        }
+
+        > select, > input {
+            font-size: 0.3rem;
+            background: none;
+            color: @single_input_box_input_select_color;
+            text-align: right;
+        }
+
+    }
+    &.date_box{
+        >div{
+            position: relative;
+            >select,>input{
+                width: 5rem;
+                color: @single_input_box_date_input_select_color;
+            }
+            >select{
+                width: 1.25rem;
+            }
+            &:after{
+                width: 0.2rem;
+                height: 0.36rem;
+                display: block;
+                content: '';
+                position: absolute;
+                right: 0.3rem;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url(@table_box_jt_logo) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.box_bg_color{
+    background-color: @other_box_bg_color;
+}
+
+.box_bg_color_opacity{
+    background-color: @other_box_bg_color_opacity;
+}
+
+.box_shadow2{
+    box-shadow: @other_box_shadow2;
+}
+
+.prefix{
+    position: relative;
+    padding-left: 0.22rem;
+    &:before{
+        position: absolute;
+        content: " ";
+        left: 0;
+        top: 0.14rem;
+        width: 0.1rem;
+        height: 0.1rem;
+        border-radius: 0.5rem;
+        background-color: @other_prefix_bg_color;
+    }
+}
+
+/* 近期统计 弹框样式*/
+.statistics_show_dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+    .statistics_select{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .statistics_option{
+            background-color: #1c1c1c;
+            color:#b4b4b4;
+            font-size: 0.28rem;
+            line-height: 0.8rem;
+            .active{
+                background-color: #303030;
+                color:#ffffff;
+            }
+        }
+    }
+    .statistics_btn_group{
+        display: flex;
+        font-size: 0.28rem;
+        line-height: 0.8rem;
+        .statistics_cancel{
+            background-color: #c68f25;
+            color:#ffffff;
+            flex: 1;
+        }
+        .statistics_ok{
+            background-color: #e8bc3c;
+            color:#ffffff;
+            flex: 1;
+        }
+    }
+}

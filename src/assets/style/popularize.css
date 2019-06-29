@@ -1,0 +1,63 @@
+.popularize {
+  font-size: 0.3rem;
+  padding-top: 0.35rem;
+}
+.popularize .p_url {
+  color: #f3f1b7;
+  font-weight: bold;
+}
+.popularize .box_qr_code {
+  display: inline-block;
+  width: 4.24rem;
+  height: 4.24rem;
+  margin: 0.48rem 0;
+  position: relative;
+  background: url('../images/bg_erweima.png') no-repeat center center / 100% auto;
+}
+.popularize .box_qr_code #qr_code {
+  width: 2.98rem;
+  height: 2.98rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
+.popularize .text_small {
+  font-size: 0.24rem;
+}
+.popularize .btn_get_poster {
+  width: 1.2rem;
+  height: 0.5rem;
+  vertical-align: middle;
+  background-image: url('../images/btn/btn_chakan.png');
+}
+.popularize .have_margin {
+  margin-top: 0.66rem;
+  margin-bottom: 0.4rem;
+}
+.popularize .box_share {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.popularize .box_share .share_icon {
+  width: 1.32rem;
+  height: 1.32rem;
+  margin-bottom: 0.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.popularize .box_share .qq_icon {
+  background-image: url('../images/btn_qq.png');
+}
+.popularize .box_share .wechat_icon {
+  background-image: url('../images/btn_weix.png');
+}
+.popularize .box_share .link_icon {
+  background-image: url('../images/btn_lianj.png');
+}
+.popularize .box_share .download_icon {
+  background-image: url('../images/btn_xiaz.png');
+}

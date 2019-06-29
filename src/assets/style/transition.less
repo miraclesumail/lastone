@@ -1,0 +1,33 @@
+.slide-fade-enter-active {
+    animation: fade .3s;
+}
+.slide-fade-leave-active {
+    animation: fade .3s reverse;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-scale-enter-active {
+    animation: scale .3s;
+}
+.slide-scale-leave-active {
+    animation: scale .3s reverse;
+}
+
+@keyframes scale {
+    0% {
+        transform: translate(-50%, -55%) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -55%) scale(1);
+        opacity: 1;
+    }
+}

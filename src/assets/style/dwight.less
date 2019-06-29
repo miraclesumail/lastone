@@ -1,0 +1,142 @@
+.report_bg(@width,@height,@url){
+  width: @width;
+  height: @height;
+  background: url("@{url}") no-repeat;
+  background-size: 100% 100%;
+}
+.pos_right(@right,@top,@bottom){
+  position: absolute;
+  right: @right;
+  top: @top;
+  bottom: @bottom;
+  margin: auto;
+}
+
+/******** 头部 插槽組件的 logo **********/
+.d_xq_logo{
+  .report_bg(0.46rem,0.56rem,'../../assets/images/icon_list.png');
+  .pos_right(1rem,0,0);
+}
+.d_edit_logo{
+  .report_bg(0.52rem,0.52rem,'../../assets/images/icon_bianjiover.png');
+  .pos_right(0.2rem,0,0);
+}
+.d_search_logo{
+  .report_bg(0.52rem,0.5rem,'../../assets/images/icon_search.png');
+  .pos_right(0.2rem,0,0);
+}
+.d_yj_logo{
+  .report_bg(0.6rem,0.64rem,'../../assets/images/icon_money.png');
+  .pos_right(1rem,0,0);
+}
+
+.search_input{
+  margin-top: 0.7rem;
+}
+
+/******** 报表首页**********/
+@report_bg:"../images/bg_baobiao.png";  // 总报表  会员报表  下级代理报表 父盒子 的bg
+@allForm_bg:"../images/thumb_zong.png";  // 总报表bg
+@memberForm_bg:"../images/thumb_zhishuhuiyuan.png";  // 会员报表bg
+@myProxy_bg:"../images/thumb_xiajidaili.png";//下级代理报表bg
+@memberNum_boder_bg:'../images/tittle-xiaxianrenshu.png';  // 下线人数 文字border
+@agentNum_boder_bg:'../images/tittle-zongshuying.png';  // 总输赢 文字border
+@zbNum_boder_bg:'../images/tittle-youxiaohuiyuan.png';  // 有效会员占比 文字border
+
+.report_info_box(){  // 信息框样式
+  background:#131313;
+  box-shadow: -0.02rem -0.02rem 0 #3f3f3f,0.02rem 0.02rem 0.1rem #131313;
+}
+@report_line:#333;  // 信息框分割线的样式；
+
+/******** 报表页面 三个 select 组件 的样式**********/
+@search_box_bg:#000; // 查询组件的背景颜色
+@search_border:0.02rem solid #444444; // li的border
+.search_select(){  // select的样式
+  background: #000;
+  color: #fff;
+}
+@search_top:'../images/top_sz.png'; // 箭头的背景色
+
+/******** 报表页面 信息内容 组件的 样式**********/
+@info_title:"../images/rect_bg.png";  //信息组件头部bg
+@info_search_logo:"../images/icon_mingxi.png";  //信息组件 内容 查询 logo
+@info_warning_border:"0.02rem solid #ecd37b";  //信息组件 提示框border
+
+@info_prebtn_bg:"../images/btn/btn_prepage.png";  //信息组件 上一页按钮
+@info_prebtn_bg_gray:"../images/btn/btn_prepage_gray.png";  //信息组件 上一页按钮  灰色
+
+
+@info_nextbtn_bg:"../images/btn/btn_nextpage.png";  //信息组件 上一页按钮
+@info_nextbtn_bg_gray:"../images/btn/btn_nextpage_gray.png";  //信息组件 上一页按钮  灰色
+.info_input(){
+  border: 0.01rem solid #8b7543;
+  background: #000;
+  color: #fff;
+}
+.info_li_boder(){
+  border-right: 0.01rem solid #745e2c;
+  border-bottom: 0.01rem solid #745e2c;
+}
+
+/******** 报表页面 存款  投注 会员 数据组件的 样式**********/
+@memberFee_bg:"../images/rect_info.png"; // 数据盒子的 bg
+@memberFee_line_bg:#d3c77e; // 数据盒子的 中间 细线的 bg
+
+/******** 账户-修改密码 **********/
+
+// 获取验证码 按钮
+.get_code_btn() {
+  .report_bg(2.5rem, 0.86rem, '../images/btn/btn_bg_yanzm.png');
+  line-height: 0.86rem;
+  text-align: center;
+  font-size: 0.32rem;
+  &.done {
+    background: url("../images/btn/btn-06-code.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+// 确认按钮
+.update_confirm(){
+  .report_bg(4rem, 0.86rem, '../images/btn/update_confirm.png');
+  margin: 0.3rem auto 0;
+}
+
+/******** 账户-下级开户 **********/
+@downMember:'../images/thumb_xxhykh_gray.png';//下级会员开户
+@downProxy:'../images/thumb_xxdlkh_gray.png';//下级代理开户
+@downMember_hover:'../images/thumb_xxhykh.png';//下级会员开户
+@downProxy_hover:'../images/thumb_xxdlkh.png';//下级代理开户
+/*****账户 - 额度记录*******/
+.search_btn(){
+  .report_bg(4rem, 0.86rem, '../images/btn/btn_chaxun.png');
+  margin: 0.3rem auto 0.7rem;
+}
+
+/*****账户 - 下级列表*******/
+@icon_yj_whtie:'../images/icon-yj-white.png';//
+@icon_see_dl:'../images/icon_ff.png';//
+@icon_see_mx:'../images/icon_mingxii.png';//
+.hybb_btn(){
+  .report_bg(4rem, 0.86rem, '../images/btn/btn_hybb.png');
+  margin: 0.3rem auto 0.7rem;
+}
+@select_box_bg:#000;
+@select_box_color:#f2e499;
+@select_box_jt:"../images/select-jt.png";
+
+/**** 单线 inputbox 公用样式*******/
+@single_input_box_border:#ecd27a;
+@single_input_box_bg:#000;
+@single_input_box_span_color:#fff;
+@single_input_box_span_color2:#f8f5b3;
+@single_input_box_input_select_color:#717171;
+@single_input_box_date_input_select_color:#f8f5b3;
+
+/**** 账户修改手机号*******/
+
+.updatebank_btn_bg(){
+  .report_bg(4.02rem, 0.86rem, '../images/btn/update_bank_bg.png');
+  margin:  0 auto;
+}

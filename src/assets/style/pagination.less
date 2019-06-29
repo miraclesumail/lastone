@@ -1,0 +1,38 @@
+.pagination_box {
+  display: flex;
+  align-items: center;
+
+  > .go_pre, > .go_next {
+    width: 1.18rem;
+    height: 0.48rem;
+    border-radius: 0.15rem;
+  }
+
+  > .go_pre {
+    background: url(@info_prebtn_bg) no-repeat;
+    background-size: 100% 100%;
+
+    &.none {
+      background: url(@info_prebtn_bg_gray) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  > .go_next {
+    background: url(@info_nextbtn_bg) no-repeat;
+    background-size: 100% 100%;
+
+    &.none {
+      background: url(@info_nextbtn_bg_gray) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  > input {
+    width: 0.76rem;
+    height: 0.4rem;
+    margin: 0 0.2rem;
+    text-align: center;
+    .info_input();
+  }
+}

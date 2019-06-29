@@ -1,0 +1,47 @@
+.d_search_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 0.8rem;
+  background: @search_box_bg;
+
+  > li {
+    width: 2.34rem;
+    height: 0.34rem;
+    border-right: @search_border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    > select {
+      width: 1.1rem;
+      height: 0.34rem;
+      font-size: 0.28rem;
+      position: relative;
+      .search_select();
+      &.more{
+        width: 1.6rem;
+      }
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      width: 0.2rem;
+      height: 0.12rem;
+      position: absolute;
+      right: 0.46rem;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: url(@search_top) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

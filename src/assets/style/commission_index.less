@@ -1,0 +1,74 @@
+.commission_index {
+    color: #fff;
+    .main_commission {
+        padding: 0.36rem 0.28rem;
+        .page_info {
+            background-image: linear-gradient(to bottom, #2e2e2e, #212121);
+            padding: 0.52rem 0.27rem;
+            overflow: hidden;
+            .box_top_page_info {
+                display: flex;
+                font-size: 0.28rem;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #373737;
+                padding-bottom: 0.25rem;
+                .ci_text {
+                    margin-right: 0.32rem;
+                    line-height: 0.54rem;
+                }
+                .commission_info {
+                    display: flex;
+                    font-size: 0.4rem;
+                }
+                .ci_insignia {
+                    font-size: 0.3rem;
+                }
+                .show_info {
+                    color: #e9cd71;
+                    padding-right: 0.35rem;
+                    background: url('../images/icon_jiantou.png') no-repeat right center/auto 65%;
+                }
+            }
+            .box_total {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                font-size: 0.26rem;
+                // margin-top: 0.11rem;
+                padding: 0.11rem;
+                border-bottom: 1px solid #373737;
+                >div {
+                    width: 2.5rem;
+                    height: 1.1rem;
+                    border: 1px solid #daa940;
+                    margin: 0.12rem;
+                    padding-top: 0.12rem;
+                    font-weight: bold;
+                    .total_name {
+                        margin-bottom: 0.1rem;
+                    }
+                }
+                .highest {
+                    color: #e32121;
+                }
+                .lowest {
+                    color: #1dc668;
+                }
+                .total {
+                    color: #e38f21 ;
+                }
+                .average {
+                    color: #21b3e3;
+                }
+            }
+            .box_chart {
+                margin-top: 0.4rem;
+            }
+        }
+        #commission_areaspline {
+            margin-top: 0.1rem;
+            height: 4rem;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.collection{
+    .content{
+        padding-bottom: 0.5rem;
+        .title{
+            font-size: 0.3rem;
+            text-align: left;
+            padding: 0.35rem 0 0.2rem 0.3rem;
+            border-bottom: 1px solid @other_b_color;
+            &.title_1{
+                padding-top: 0.2rem;
+            }
+        }
+        .title_content{
+            font-size: 0.28rem;
+            padding: 0.25rem;
+            border-bottom: 1px solid @other_b_color;
+            text-align: left;
+            p{
+                text-indent:2em;
+            }
+            &.title_content1{
+                .item{
+                    display: flex;
+                    margin: 0.1rem;
+                    .item_left{
+                        font-size: 0.27rem;
+                        width: 1.8rem;
+                        .sign{
+                            height: 0.9rem;
+                            &.sign1{
+                                background:url("../images/collection_xianshangtuig.png") no-repeat center center;
+                                background-size: contain;
+                            }
+                            &.sign2{
+                                background:url("../images/collection_xianxiatuiguang.png") no-repeat center center;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                    .item_center{
+                        width: 1.4rem;
+                    }
+                    .item_right{
+                        flex: 1;
+                    }
+                }
+            }
+            &.title_content2{
+                padding: 0.25rem 0.25rem 0.25rem 0;
+            }
+        }
+    }
+}
